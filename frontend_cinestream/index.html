@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineStream - Catálogo de Filmes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🎬 CineStream</h1>
+    <div id="usuario-selector">
+      <label for="usuarioSelect">Usuário logado:</label>
+      <select id="usuarioSelect"></select>
+    </div>
+  </header>
+
+  <main>
+    <section id="filmes-section">
+      <h2>Catálogo de Filmes</h2>
+      <div id="filmes-container"></div>
+      <form id="form-filme">
+        <input type="text" id="titulo" placeholder="Título" required>
+        <input type="text" id="genero" placeholder="Gênero" required>
+        <input type="number" id="ano" placeholder="Ano" required>
+        <button type="submit">Adicionar Filme</button>
+      </form>
+    </section>
+
+    <section id="favoritos-section">
+      <h2>Meus Favoritos</h2>
+      <div id="favoritos-container"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
